@@ -1,0 +1,18 @@
+{
+    "contents" : "####  GOV 2001: REPLICATION PAPER   ####\n##PAPER: BESLEY AND REYNAL-QUEROL (2014, APSR)\n##AUTHORS: JEREMY BOWLES, JESSIE BULLOCK, SHOM MAZUMDER\n##FIRST CREATED: 03/10/2016\n##LAST UPDATED: 03/16/2016\n##PURPOSE: THIS SCRIPT REPLICATES ALL OF THE TABLES/ANALYSES IN BESLEY AND REYNAL-QUEROL (2014)\n##NOTES:\n\n####Load Packages####\nlibrary(foreign)\nlibrary(ggplot2)\nlibrary(plyr)\nlibrary(stargazer)\nlibrary(sandwich)\nlibrary(multiwayvcov) \nlibrary(MASS)\nlibrary(rms)\nlibrary(lmtest)\nlibrary(ordinal)\nlibrary(aod)\n\n####Set working directory####\nsetwd(\"~/Google Drive/GOV_2001_REPLICATION\")\n\n####READ IN DATA####\ntab2_3.dat <- read.dta('01_Data/REPLICATION_APSR_2014_BRQ/REPLICATION_TABLE_2_3_APSR_2014_BRQ.dta')\n\n####FUNCTIONS####\n\n#function for clustered SEs\ncluster.se<-function(model, cluster){\n  vcovCL<-cluster.vcov(model, cluster)\n  coef<-coeftest(model, vcovCL)\n  return(coef)\n}\n\n#replicate table 2\nsource('02_Analysis/Replication/table_2.R')\n\n#replicate table 3\nsource('02_Analysis/Replication/table_3.R')\n\n#replicate table 4\nsource('02_Analysis/Replication/table_4.R')\n\n#replicate table 5\nsource('02_Analysis/Replication/table_5.R')\n\n#replicate table 6\nsource('02_Analysis/Replication/table_6.R')\n\n#replicate table 7\nsource('02_Analysis/Replication/table_7.R')\n\n\n\n",
+    "created" : 1458596555761.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "234685267",
+    "id" : "7146471A",
+    "lastKnownWriteTime" : 1458678283,
+    "path" : "~/Google Drive/GOV_2001_REPLICATION/02_Analysis/Replication/batch_replicate_tables.R",
+    "project_path" : "02_Analysis/Replication/batch_replicate_tables.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
