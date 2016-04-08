@@ -1,0 +1,45 @@
+---
+title: "Model Dependence in Besley & Reynal-Querol (2014)"
+author: 
+  - Jeremy Bowles
+  - Jessie Bullock
+  - Shom Mazumder
+date: "April 5, 2016"
+output: pdf_document
+header_includes:
+  - \usepackage{amsmath}
+  - \usepackage{setspace}
+  - \usepackage{amssymb}
+  - \usepackage{graphicx}
+  - \usepackage{dcolumn}
+  - \usepackage{rotating}
+  - \usepackage[utf8]{inputnc}
+---
+
+\section{Model Dependence}
+We begin by plotting the propensity scores before matching to check for covariate imbalance. Figure 1 shows the distribution of propensity scores for countries that have ever had conflict (historical or present) compared to countries that have not had historical nor present conflict. Figure 2 shows the distribution of propensity scores for sub-national grid cells under the same conditions. As you can see, the assumption of common support appears to be violated. 
+
+Figure 3 shows the residual-leverage plot of one of the models in Table 2 of Besley and Reynal-Querol's paper. Three significant outliers seem to be disproportionately affecting the model fit. This was the case in several of the OLS models in their original table. Figure 4 shows a poorly-fit QQ plot of one of the robustness checks in Besley and Reynal-Querol's Table 7. Many of the other residual plots (not reported) had similar problems with non-normality. 
+
+Lastly, we replicated the OLS regressions in Table 2 of the initial paper, and show them in Table 1 of this memo. We changed the dependent variable (civil war incidence, present day) from a decimal to a binary variable. A histogram of the original data (also not reported here) shows that a majority of the values are zero, and the data is extremely right-skewed. The results seem to be driven by few extemely high values in the 20s and 30s. When recoding the dependent variable, the significance of historical conflict nearly disappers entirely, or, is significant only at a greater alpha-value. 
+
+These few tests suggest that their results may be tied to careful model selection and there is evidence of model dependence. 
+
+
+\begin{center}
+\includegraphics[width=8cm]{pscore_cross_country} 
+\end{center}
+
+\begin{center}
+\includegraphics[width=8cm]{pscore_subnat} 
+\end{center}
+
+\begin{center}
+\includegraphics[width=8cm]{tab2_1_influence} 
+\end{center}
+
+\begin{center}
+\includegraphics[width=8cm]{tab7_1_qq} 
+\end{center}
+
+\input{table_2_binary_replication}
