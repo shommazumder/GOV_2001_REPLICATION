@@ -37,7 +37,11 @@ pscore.plot.crossnat <- ggplot(data=tab2_3.dat,aes(x=pscores,group=factor(everWa
   geom_density(size=1.5)+
   scale_color_discrete(guide = guide_legend(title='Ever Historical War'))+xlab('Propensity Scores')+
   ggtitle('Distribution of Propensity Scores (Before Matching, Cross-National)')
+
+pdf(file = "02_Analysis/Extended_Analysis/pscore_cross_country.pdf",width=8,height=6)
 pscore.plot.crossnat
+dev.off()
+
 
 #Run KS test
 ks.test(tab2_3.dat$pscores[tab2_3.dat$everWar==1],tab2_3.dat$pscores[tab2_3.dat$everWar==0])
@@ -58,7 +62,11 @@ pscore.plot.subnat <- ggplot(data=tab4.dat,aes(x=pscores,group=factor(everWar),c
   geom_density(size=1.5)+
   scale_color_discrete(guide = guide_legend(title='Ever Historical War'))+xlab('Propensity Scores')+
   ggtitle('Distribution of Propensity Scores (Before Matching, Sub-National)')
+
+
+pdf(file = "02_Analysis/Extended_Analysis/pscore_subnat.pdf",width=8,height=6)
 pscore.plot.subnat
+dev.off()
 
 #Run KS test
 ks.test(tab4.dat$pscores[tab4.dat$everWar==1],tab4.dat$pscores[tab4.dat$everWar==0])
@@ -92,7 +100,7 @@ ks.test(tab567.dat$pscores[tab567.dat$HistoricalConflictGrid==1],
 
 ############Logging / binary indicators - test on DV
 
-tab2_3.dat$civilwar_binary <- NULL
+tab2_3.dat$civilwar_binary <- NA
 for (i in 1:length(tab2_3.dat$civilwar_binary)){
   if (tab2_3.dat$CivilWarIncidence[i]!= 0){
   tab2_3.dat$civilwar_binary[i] <- 1
@@ -100,7 +108,7 @@ for (i in 1:length(tab2_3.dat$civilwar_binary)){
     tab2_3.dat$civilwar_binary[i] <- 0
   }
 } 
-tab2_3.dat$purges_binary <- NULL
+tab2_3.dat$purges_binary <- NA
 for (i in 1:length(tab2_3.dat$purges_binary)){
   if (tab2_3.dat$Purges[i]==0.000){
     tab2_3.dat$purges_binary[i] <- 0
@@ -147,9 +155,8 @@ table2.binary.rse <- list(sqrt(diag(tab2.1.binary$vcovHC)),sqrt(diag(tab2.2.bina
                 sqrt(diag(tab2.7.binary$vcovHC)), sqrt(diag(tab2.8.binary$vcovHC)))
 
 #put all dependent variables into a vector
-table2.bin.dep.var.labels <- c('Civil war','Civil war','Purges',
-                           'Purges','Conflict (ordered)','Conflict (ordered)',
-                           'Civil war','Purges','Conflict (ordered)')
+table2.bin.dep.var.labels <- c('Civil war','Purges',
+                           'Civil war','Purges')
 
 #put all covariate labels into a vector
 table2.bin.cov.labels <- c('War Prevalence 1400-1700','Slave exports','Population Density in 1400')
@@ -176,7 +183,7 @@ tab2.1 <- lm(CivilWarIncidence ~ WarPrevalence14001700 + f_french + f_spain + f_
                region_nNUNN + region_sNUNN + region_wNUNN + region_eNUNN + region_cNUNN,data = tab2_3.dat)
 tab2.1$vcovHC <- vcovHC(tab2.1,type='HC1')
 
-pdf(file = "02_Analysis/Extended_Analysis/tab1_1_influence.pdf",width=6,height=5)
+pdf(file = "02_Analysis/Extended_Analysis/tab2_1_influence.pdf",width=6,height=5)
 plot(tab2.1, labels.id = tab2_3.dat$country, 5) ## South Africa, Angola, Algeria super influential
 dev.off()
 
