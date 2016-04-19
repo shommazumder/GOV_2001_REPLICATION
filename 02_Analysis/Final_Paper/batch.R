@@ -18,7 +18,21 @@ lapply(required.packages, library, character.only = TRUE)
 setwd(getwd())#make sure to open the rproj file so you don't have directory structure problems!
 
 ####FUNCTIONS####
-
+seq.g.var <- function(mod.first, mod.direct, med.vars) {
+  #code taken from Matt Blackwell
+  require(sandwich)
+  mat.x <-  model.matrix(mod.direct)
+  mat.first <-  model.matrix(mod.first)
+  n <- nrow(mat.x)
+  Fhat <- crossprod(mat.x, mat.first)/n
+  Fhat[, !(colnames(mat.first) %in% med.vars)] <- 0
+  Mhat.inv <- solve(crossprod(mat.first)/n)
+  ghat <- t(estfun(mod.direct)) + Fhat %*% Mhat.inv %*% t(estfun(mod.first))
+  meat <- crossprod(t(ghat))/n
+  bread <- (t(mat.x)%*%mat.x)/n
+  vv <- (n/(n-ncol(mat.x)))*(solve(bread) %*% meat %*% solve(bread))/n
+  return(vv)
+}
 
 ####MATCHING####
 
