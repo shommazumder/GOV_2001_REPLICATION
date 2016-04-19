@@ -15,12 +15,18 @@ lapply(required.packages, library, character.only = TRUE)
 
 ####SETUP####
 ##Set working directory
-setwd(getwd())#make sure to open the rproj file so you don't have directory structure problems
+setwd(getwd())#make sure to open the rproj file so you don't have directory structure problems!
+
+####FUNCTIONS####
+
 
 ####MATCHING####
 
+
 ####MECHANISMS####
 
+
 ####VARIABLE SELECTION####
+
 
 ####MISCELLANEOUS####
