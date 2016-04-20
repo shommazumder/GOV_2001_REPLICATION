@@ -19,10 +19,9 @@ setwd(getwd())#make sure to open the rproj file so you don't have directory stru
 
 ####FUNCTIONS####
 seq.g.var <- function(mod.first, mod.direct, med.vars) {
-  #code taken from Matt Blackwell
   require(sandwich)
-  mat.x <-  model.matrix(mod.direct)
-  mat.first <-  model.matrix(mod.first)
+  mat.x <- model.matrix(mod.direct)
+  mat.first <- model.matrix(mod.first)
   n <- nrow(mat.x)
   Fhat <- crossprod(mat.x, mat.first)/n
   Fhat[, !(colnames(mat.first) %in% med.vars)] <- 0
