@@ -23,7 +23,11 @@ var.selection <- function(dataset, model){
   mat <- na.omit(cbind(y,x))
   y <- mat[,1]
   x <- mat[,2:ncol(mat)]
+<<<<<<< HEAD
   fit <- glmnet(x, y, alpha = .5)
+=======
+  fit <- glmnet(x, y, alpha = 1)
+>>>>>>> d0416555351873e4356562e5149c598979bd2d93
   plot(fit,xvar="lambda")
   cvfit <- cv.glmnet(x, y)
   plot(cvfit)

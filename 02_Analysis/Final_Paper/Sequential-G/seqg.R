@@ -111,6 +111,7 @@ intergroup.direct.war$seq.g.var <- seq.g.var(mod.first = intergroup.first.war,
                                          mod.direct = intergroup.direct.war,
                                          med.vars = c('lrgdpl2631960','CivilWarIncidence'))#variance estimation doesn't work right now
 coeftest(intergroup.direct.war,vcov=intergroup.direct.war$seq.g.var)
+<<<<<<< HEAD
 ## cluster bootstrap the SEs
 set.seed(02138)
 boots <- 1000
@@ -147,6 +148,8 @@ for (b in 1:boots) {
 }
 sd(acde.boots)
 quantile(acde.boots, probs = c(0.025, 0.975))
+=======
+>>>>>>> d0416555351873e4356562e5149c598979bd2d93
 
 #ACDE of war on ethnic identity netting out present day GDP per capita
 identityeth.first.war <- lm(identitydumeth ~ age+age2+male+urban_dum+WarPrevalence14001700+CivilWarIncidence+ln_export_pop+ln_pop_dens_1400+
@@ -172,6 +175,7 @@ identityeth.direct.war$seq.g.var <- seq.g.var(mod.first = identityeth.first.war,
                                           mod.direct = identityeth.direct.war,
                                           med.vars = c('lrgdpl2631960','CivilWarIncidence'))#variance estimation doesn't work right now
 coeftest(identityeth.direct.war,vcov=identityeth.direct.war$seq.g.var)
+<<<<<<< HEAD
 ## cluster bootstrap the SEs
 set.seed(02138)
 boots <- 1000
@@ -208,6 +212,8 @@ for (b in 1:boots) {
 }
 sd(acde.boots)
 quantile(acde.boots, probs = c(0.025, 0.975))
+=======
+>>>>>>> d0416555351873e4356562e5149c598979bd2d93
 
 #ACDE of war on national identity netting out present day GDP per capita
 identitynat.first.war <- lm(identitydumnat ~ age+age2+male+urban_dum+WarPrevalence14001700+CivilWarIncidence+ln_export_pop+ln_pop_dens_1400+
@@ -233,6 +239,7 @@ identitynat.direct.war$seq.g.var <- seq.g.var(mod.first = identitynat.first.war,
                                           mod.direct = identitynat.direct.war,
                                           med.vars = c('lrgdpl2631960','CivilWarIncidence'))#variance estimation doesnt' work right now
 coeftest(identitynat.direct.war,vcov=identitynat.direct.war$seq.g.var)
+<<<<<<< HEAD
 ## cluster bootstrap the SEs
 set.seed(02138)
 boots <- 1000
@@ -269,6 +276,8 @@ for (b in 1:boots) {
 }
 sd(acde.boots)
 quantile(acde.boots, probs = c(0.025, 0.975))
+=======
+>>>>>>> d0416555351873e4356562e5149c598979bd2d93
 
 ####GRID-LEVEL ANALYSIS####
 #ACDE of historical conflict netting out popden90

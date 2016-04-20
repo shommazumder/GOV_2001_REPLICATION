@@ -1,6 +1,7 @@
 library(foreign)
 library(plyr)
 
+<<<<<<< HEAD
 afro5 <- read.spss("~/Google Drive/GOV_2001_REPLICATION/02_Analysis/Final_Paper/Afrobarometer/merged_r5_data_0.sav", to.data.frame = TRUE)
 afro4 <- read.spss("~/Google Drive/GOV_2001_REPLICATION/02_Analysis/Final_Paper/Afrobarometer/merged_r4_data.sav", to.data.frame = TRUE)
 
@@ -24,6 +25,11 @@ afro4.rep$natid <- as.numeric(as.character(afro4.rep$natid))
 View(afro4.rep)
 
 ###AFROBAROMETER 5 - 2015
+=======
+afro5 <- read.spss("~/Google Drive/merged_r5_data_0.sav", to.data.frame = TRUE)
+#write.csv(afro5, "barometer_2015.csv")
+
+>>>>>>> d0416555351873e4356562e5149c598979bd2d93
 ###Recode questions - recode q21 "govt like a parent variable"
 afro5$q21a <- as.character(afro5$Q21)
 levels(afro5$Q21)
