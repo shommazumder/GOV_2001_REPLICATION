@@ -1,8 +1,58 @@
 \documentclass{article}
+%%%%PACKAGES%%%%
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{amssymb, amsmath}
+\usepackage{footbib}
+\usepackage[toc,page]{appendix}
+\usepackage[margin=1.10in]{geometry}
+\usepackage{adjustbox}
+\usepackage{csquotes}
+
+%%%%TITLE%%%%
+\title{GOV 2001 Replication Paper}
+\author{Jessie Bullock \and Jeremy Bowles \and Soumyajit Mazumder}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
+\maketitle
 
+%%%%ABSTRACT%%%%
+\begin{abstract}
+This is our really good abstract.
+\end{abstract}
 
+\section{Introduction}
+
+How does pre-colonial conlict shape contemporary economic and political development? Moreover, what are the mechanisms of persistence? In a recent paper, \citet{BesleyRQ2014} explore these questions in the context of Africa by assembling and analyzing a new national and subnational dataset of pre-colonial conflict in Africa. While much of the existing scholarship on African political economy points to the pernicious role of colonial institutions and practices in perpetuating economic and political underdevelopment, \citet{BesleyRQ2014} provide evidence that some of these roots of underdevelopment may actually lie long before the era of colonization \citep{Nunn2008,NunnWantchekon2011,MP2016}.
+
+Though \citet{BesleyRQ2014} provide an important substantive contribution to the literatures on African political economy, the persistence of historical events, and conflict, we argue that there are several avenues through which their piece can be improved to further enrich our understanding of the relationship between historical conflict and contemporary economic and political development. First, we argue that the authors of the original article are susceptible to the problem of overadjustment for covariates \citep{SchistermanColePlatt2009}. Second, we maintain that the authors fail to utilize all of the information that they have in their data by assuming that historical conflict has constant effects across all units--an assumption that is generally implausible in most studies. Third, we argue that when the authors do investigate their mechanisms, their strategy of controlling for post-treatment covariates opens their estimates up to unexpected biases. Fourth and finally, we posit that the authors should have also utilized further data in their individual-level survey results that speak directly to their proposed mechanisms of persistence. 
+
+In this research note, we provide solutions to each of these in a principled and systematic way. 
+
+\begin{center}
+[INSERT PARAGRAPH ON OUR CONTRIBUTION]
+\end{center}
+
+\section{Overview}
+
+\section{Effect Heterogeneity and Variable Selection}
+
+\section{Assessing the Mechanisms of Persistence}
+
+\include{acde}
+
+\section{Extensions of the Analysis}
+
+\clearpage
+
+\bibliographystyle{apsr} 
+\bibliography{gov_2001} 
 
 \end{document}

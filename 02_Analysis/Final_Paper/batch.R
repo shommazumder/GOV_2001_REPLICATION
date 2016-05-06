@@ -7,11 +7,12 @@
 
 ####PACKAGES####
 required.packages <- c('foreign','ggplot2','stargazer','sandwich','multiwayvcov',
-                       'MASS','rms','lmtest','ordinal','aod','glmnet')
+                       'MASS','rms','lmtest','ordinal','aod','glmnet','reshape2',
+                       'plyr','dplyr')
 if(sum(required.packages %in% rownames(installed.packages()))!=length(required.packages)){
   install.packages(required.packages[which(!(required.packages %in% rownames(installed.packages())))])
 }
-lapply(required.packages, library, character.only = TRUE)
+lapply(required.packages, FUN = function(x){library(x,character.only = TRUE)})
 
 ####SETUP####
 ##Set working directory
@@ -33,13 +34,13 @@ seq.g.var <- function(mod.first, mod.direct, med.vars) {
   return(vv)
 }
 
-####MATCHING####
+####VARIABLE SELECTION: LASSO####
+source('02_Analysis/Final_Paper/Machine_Learning/ML.R')
 
+####MECHANISMS: SEQUENTIAL G####
+#Warning: This script takes some time to run since it runs
+#several cluster bootstrap procedures for a large dataset
+source('02_Analysis/Final_Paper/Sequential-G/seqg-v2.R')
 
-####MECHANISMS####
-
-
-####VARIABLE SELECTION####
-
-
-####MISCELLANEOUS####
+####AFROBAROMETER ANALYSIS: TRUST####
+source('02_Analysis/Final_Paper/Afrobarometer/barometer_analysis.R')

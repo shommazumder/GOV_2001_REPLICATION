@@ -1,0 +1,69 @@
+\subsection{Reevaluating Social Attitudes}
+
+\citet{BesleyRQ2014} argue that there may be evidence of pre-colonial conflict shaping current perceptions of ethnic versus national identity, and trust of members of different ethnic groups. In section \ref{acderesults} above, we provide further support that the demediated effect of pre-colonial conflict may shape social identity through cultural or institutional channels. If the mechanism of pre-colonial conflict holds, however, then only analyzing the effect of pre-colonial conflict on trust of outgroup members is an incomplete analysis of modern levels of trust. There is considerable evidence that, even in the absence of conflict, individuals display higher levels of trust towards members of their own ethnic group than members of another ethnic group \citep{FearonLaitin96, NunnWantchekon2011}. This has been experimentally proven as well \citep{Habyarimana}. We know less about situations in which an individual trusts neither group, or where baseline levels of trust are so low that it appears that trust is absent from any type of intergroup relations. In this section, we pair the data from \cite{BesleyRQ2014} to the original data from the Afrobarometer survey to compare respondents' trust of other institutions and individuals in areas with historical conflict with areas with no historical conflict. 
+
+We were able to successfully pair the data from \cite{BesleyRQ2014} with the responses from the original 2005 Afrobarometer survey. When running similar regressions to Table 4 in their paper, we find that individuals who hail from areas that have experienced historical conflict not only have greater levels of mistrust of other ethnic groups, but have greater levels of mistrust of the President, Parliament, local governments, political parties, the military, the police, and other political institutions.\footnote{For brevity, these are not reported here, but \texttt{R} code can be found in the supplemental materials.} The coefficient for historical conflict, as in the \cite{BesleyRQ2014} analysis, is a negative and statistically significant predictor of trust at the $p < .01$ level. 
+
+The most interesting finding is the relationship between historical conflict and trust of coethnics, or members from your own ethnic group. Using the same regression models as \cite{BesleyRQ2014} of their Table 4, we find that the same survey respondents have even lower levels of intragroup trust compared to intergroup trust when controlling for colonial dummies, and the same low levels of intragroup trust as intergroup trust when controlling for civil war prevalence. The models of intergroup trust from \cite{BesleyRQ2014} are reprinted alongside our models of intragroup trust below in Table \ref{table:trust}. 
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Thu, May 05, 2016 - 14:05:04
+\begin{table}[!htbp] \centering 
+  \caption{Trust and Identity} 
+  \label{table:trust} 
+\footnotesize 
+\begin{tabular}{@{\extracolsep{2pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & Inter group (replication) & Intra group & Inter group (replication) & Intra group \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ War prevalence 1400-1700 & $-$0.013$^{***}$ & $-$0.042$^{***}$ & $-$0.017$^{***}$ & $-$0.023$^{***}$ \\ 
+  & (0.003) & (0.003) & (0.004) & (0.004) \\ 
+  Civil war prevalence &  &  & $-$0.010 & 0.051$^{***}$ \\ 
+  &  &  & (0.010) & (0.010) \\ 
+ \hline \\[-1.8ex] 
+Observations & 17,419 & 17,562 & 17,419 & 17,562 \\ 
+R$^{2}$ & 0.110 & 0.113 & 0.110 & 0.113 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+\subsection{Further Questions} 
+
+These results spark interesting questions for further research: does historical conflict reduce trust specifically between ethnic groups and cause individuals to experience more ingroup bias, or does it just reduce individuals' trust levels in all people? Table \ref{table:trust} suggests the latter. Instead of conflict affecting feelings towards particular groups as the authors suggest, another possible explanation is that conflict could cause individuals to trust no one, and weaken social fabric both between similar individuals and different individuals. If this were the case, the explanation that ``the way conflicts are reported across generations affects feelings towards particular groups due to historical rivalries'' could be less convincing than the potential explanation that historical conflict affects propensity to trust in general \citep{BesleyRQ2014}. 
+
+A secondary question is about the relationship between low levels of trust and ethnic identity versus national identity. Does ethnic identity versus national identity matter when an individual trusts no one? Why does increased ethnic identity not translate to increased levels of ingroup trust? We see in the original paper that historical conflict is associated with higher levels of ethnic identity vis-\`{a}-vis national identity. However, this does not translate to increased trust of one's own ethnic group. This suggests that the presence of historical conflict may shape contemporary trust and contemporary identity in different ways, and that identifying with one's ethnic group may not imply higher levels of trust within the ethnic group. It also serves as a caution that simply analyzing the level of intergroup trust presents an incomplete picture, and that citizens' levels of intergroup trust should be analyzed in the context of their trust of other individuals and institutions. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

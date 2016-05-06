@@ -1,0 +1,100 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Acemoglu, Johnson \harvardand\ Robinson]{Acemoglu, Johnson
+  \harvardand\ Robinson}{2001}{AcemogluJohnsonRobinson2001}
+Acemoglu, Daron, Simon Johnson \harvardand\ James~A. Robinson. 2001.
+\newblock ``The Colonial Origins of Comparative Development: An Empirical
+  Investigation.'' {\em American Economic Review} 91(5):1369--1401.
+
+\harvarditem[Acharya, Blackwell \harvardand\ Sen]{Acharya, Blackwell
+  \harvardand\ Sen}{2016}{AcharyaBlackwellSen2016}
+Acharya, Avidit, Matthew Blackwell \harvardand\ Maya Sen. 2016.
+\newblock ``Explaining Causal Findings without Bias: Detecting and Assessing
+  Direct Effects.'' {\em American Political Science Review} .
+
+\harvarditem{Besley \harvardand\ {Reynal-Querol}}{2014}{BesleyRQ2014}
+Besley, Timothy \harvardand\ Marta {Reynal-Querol}. 2014.
+\newblock ``The Legacy of Historical Conflict: Evidence from Africa.'' {\em
+  American Political Science Review} 108(2):319--336.
+
+\harvarditem{Fearon \harvardand\ Laitin}{1996}{FearonLaitin96}
+Fearon, James~D. \harvardand\ David~D. Laitin. 1996.
+\newblock ``Explaining Interethnic Cooperation.'' {\em American Political
+  Science Review} 90:715--735.
+\newline\harvardurl{http://journals.cambridge.org/article_S0003055400208150}
+
+\harvarditem{Habyarimana \harvardand\ Weinstein}{2007}{Habyarimana}
+Habyarimana, James, Humphreys Macarthan Posner Daniel.~N \harvardand\ Jeremy~M.
+  Weinstein. 2007.
+\newblock ``Why Does Ethnic Diversity Undermine Public Goods Provision?'' {\em
+  American Political Science Review} 101:709--725.
+
+\harvarditem[Henderson, Storeygard \harvardand\ Weil]{Henderson, Storeygard
+  \harvardand\ Weil}{2012}{henderson_measuring_2012}
+Henderson, J.~Vernon, Adam Storeygard \harvardand\ David~N Weil. 2012.
+\newblock ``Measuring {Economic} {Growth} from {Outer} {Space}.'' {\em American
+  Economic Review} 102(2):994--1028.
+\newline\harvardurl{http:// pubs.aeaweb.org/doi/abs/10.1257/aer.102.2.994}
+
+\harvarditem[Hsiang, Burke \harvardand\ Miguel]{Hsiang, Burke \harvardand\
+  Miguel}{2013}{hsiang2013quantifying}
+Hsiang, Solomon~M, Marshall Burke \harvardand\ Edward Miguel. 2013.
+\newblock ``Quantifying the influence of climate on human conflict.'' {\em
+  Science} 341(6151):1235367.
+
+\harvarditem[Imai et~al.]{Imai, Keele, Tingley \harvardand\
+  Yamamoto}{2011}{ImaiEtAl2011}
+Imai, Kosuke, Luke Keele, Dustin Tingley \harvardand\ Teppei Yamamoto. 2011.
+\newblock ``Unpacking the Black Box of Causality: Learning about Causal
+  Mechanisms from Experimental and Observational Studies.'' {\em American
+  Political Science Review} 105(4):765--789.
+
+\harvarditem{Joffe \harvardand\ Greene}{2009}{JoffeGreene2009}
+Joffe, Marshall~M. \harvardand\ Tom Greene. 2009.
+\newblock ``Related Causal Frameworks for Surrogate Outcomes.'' {\em
+  Biometrics} 65(2):530--538.
+
+\harvarditem[Mehlum, Moene \harvardand\ Torvik]{Mehlum, Moene \harvardand\
+  Torvik}{2006}{mehlum2006institutions}
+Mehlum, Halvor, Karl Moene \harvardand\ Ragnar Torvik. 2006.
+\newblock ``Institutions and The Resource Curse.'' {\em The Economic Journal}
+  116(508):1--20.
+
+\harvarditem{Michalopoulos \harvardand\ Papaioannou}{Forthcoming}{MP2016}
+Michalopoulos, Stelios \harvardand\ Elias Papaioannou. Forthcoming.
+\newblock ``The Long-Run Effects of the Scramble for Africa.'' {\em American
+  Economic Review} .
+
+\harvarditem{Nunn}{2008}{nunn2008long}
+Nunn, Nathan. 2008.
+\newblock ``The Long-Term Effects of Africa's Slave Trades.'' {\em The
+  Quarterly Journal of Economics} pp.~139--176.
+
+\harvarditem{Nunn \harvardand\ Wantchekon}{2011}{NunnWantchekon2011}
+Nunn, Nathan \harvardand\ Leonard Wantchekon. 2011.
+\newblock ``The Slave Trade and the Origins of Mistrust in Africa.'' {\em
+  American Economic Review} 101(7):3221--3252.
+
+\harvarditem{Robins}{1997}{Robins1997}
+Robins, James~M. 1997.
+\newblock {\em Latent Variable Modeling and Applications to Causality}.
+\newblock Vol. 120 Springer-Verlag chapter Causal Inference from Complex
+  Longitudinal Data, pp.~69--117.
+
+\harvarditem[Schisterman, Cole \harvardand\ Platt]{Schisterman, Cole
+  \harvardand\ Platt}{2009}{SchistermanColePlatt2009}
+Schisterman, Enrique~F., Stephen~R. Cole \harvardand\ Robert~W. Platt. 2009.
+\newblock ``Overadjustment Bias and Unnecessary Adjustment in Epidemiologic
+  Studies.'' {\em Epidemiology} 20(4):488--495.
+
+\harvarditem{Tibshirani}{1996}{tibshirani1996regression}
+Tibshirani, Robert. 1996.
+\newblock ``Regression shrinkage and selection via the lasso.'' {\em Journal of
+  the Royal Statistical Society. Series B (Methodological)} pp.~267--288.
+
+\harvarditem{Vansteelandt}{2009}{Vansteelandt2009}
+Vansteelandt, Sijn. 2009.
+\newblock ``Estimating Direct Effects in Cohort and Case-Control Studies.''
+  {\em Epidemiology} 20(6):851--860.
+
+\end{thebibliography}
